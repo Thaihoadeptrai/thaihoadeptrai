@@ -42,20 +42,20 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "mbm" }),
-    Stats = Window:AddTab({ Title = "Sub", Icon = "mbm" }),
-    Info = Window:AddTab({ Title = "Status", Icon = "mbm" }),
-    Seaev = Window:AddTab({ Title = "Sea Event", Icon = "mbm" }),
-    Player = Window:AddTab({ Title = "Player", Icon = "mbm" }),
-    Teleport = Window:AddTab({ Title = "Teleport", Icon = "mbm" }),
-    Fruit = Window:AddTab({ Title = "Blox Fruits", Icon = "mbm" }),
-    Raid = Window:AddTab({ Title = "Raids", Icon = "mbm" }),
-    Race = Window:AddTab({ Title = "Race Trial", Icon = "mbm" }),
-    Shop = Window:AddTab({ Title = "Shop", Icon = "mbm" }),
-    Misc = Window:AddTab({ Title = "Misc", Icon = "mbm" }),
-    Hop = Window:AddTab({ Title = "Server", Icon = "mbm" }),
-    Setting = Window:AddTab({ Title = "Settings", Icon = "mbm" }),
-    Fluent = Window:AddTab({ Title = "Config", Icon = "mbm" }),
+    Main = Window:AddTab({ Title = "Main", Icon = "NTH" }),
+    Stats = Window:AddTab({ Title = "Sub", Icon = "NTH" }),
+    Info = Window:AddTab({ Title = "Status", Icon = "NTH" }),
+    Seaev = Window:AddTab({ Title = "Sea Event", Icon = "NTH" }),
+    Player = Window:AddTab({ Title = "Player", Icon = "NTH" }),
+    Teleport = Window:AddTab({ Title = "Teleport", Icon = "NTH" }),
+    Fruit = Window:AddTab({ Title = "Blox Fruits", Icon = "NTH" }),
+    Raid = Window:AddTab({ Title = "Raids", Icon = "NTH" }),
+    Race = Window:AddTab({ Title = "Race Trial", Icon = "NTH" }),
+    Shop = Window:AddTab({ Title = "Shop", Icon = "NTH" }),
+    Misc = Window:AddTab({ Title = "Misc", Icon = "NTH" }),
+    Hop = Window:AddTab({ Title = "Server", Icon = "NTH" }),
+    Setting = Window:AddTab({ Title = "Settings", Icon = "NTH" }),
+    Fluent = Window:AddTab({ Title = "Config", Icon = "NTH" }),
 }
 local Options = Fluent.Options
 do
@@ -94,9 +94,9 @@ function AntiBan()
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-print("made by minh & dakii")
-    print("mbm x hub")
-    print("join my discord server : https://dsc.gg/m1m")
+print("made by thaihoadeptrai")
+    print("🐧🐧🐧")
+    print("join my discord server : https://discord.com/invite/tWEfeDZB")
     print("boing boing")
     print("ty for using - have fun")
     print("sk (on discord : @player.81 & @dakii_90790)")
@@ -859,7 +859,7 @@ if First_Sea then
   function Tween2(P1)
     local Distance = (P1.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
     if Distance >= 1 then
-    Speed = 300
+    Speed = 350
     end
     game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart,TweenInfo.new(Distance/Speed, Enum.EasingStyle.Linear), {
       CFrame = P1
@@ -1175,7 +1175,7 @@ end
                     local bladehit = require(game.ReplicatedStorage.CombatFramework.RigLib).getBladeHits(
                         plr.Character,
                         {plr.Character.HumanoidRootPart},
-                        60
+                        15
                     )
                     local cac = {}
                     local hash = {}
@@ -1355,10 +1355,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/heatdeck123/firarst/m
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 --Function
-local listfastattack = {'0.25','0.2','0.15','0.1','0.05','0.02','0.015','0.01','0'}
+local listfastattack = {'0.1'}
 
     local DropdownDelayAttack = Tabs.Main:AddDropdown("DropdownDelayAttack", {
-        Title = "Select Fast Attack",
+        Title = "supper Fast Attack",
         Description = "chọn độ trễ của tốc độ đánh",
         Values = listfastattack,
         Multi = false,
@@ -1580,13 +1580,6 @@ end)
         end)
 --------------------------------------------------------------------------------------------------------------------------------------------
     Tabs.Main:AddButton({
-        Title = "config auto chest in discord click to join",
-        Description = "lấy script auto chest trong discord ấn để tham gia",
-        Callback = function()
-            setclipboard("https://discord.gg/FtCARZZXje")
-        end
-    })
-
     local ToggleSafeM = Tabs.Main:AddToggle("ToggleSafeM", {Title = "Anti Flag", Description = "tránh ban", Default = true })
     ToggleMobAura:OnChanged(function(Value)
         _G.runwhenloworantiflag = Value
